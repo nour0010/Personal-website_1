@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Madimi One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-image: url(background_web1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    
+}
+::selection{
+background: rgb(255, 228, 196);
+
+}
+.container{
+    width: 100%;
+    text-align: center;
+   
+}
+a{
+ text-decoration: none;
+ color: #504B38;
+}
+/* navebar */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 15px;
+    
+}
+/* logo navebar */
+nav .logo{
+    font-size: 35px;
+    
+    
+}
+/* home ,about,My works navebar */
+nav ul{
+display: flex;
+justify-content: space-around;
+width: 50%;
+}
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    transition: 0.5s;
+}
+nav ul li:hover{
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: white;
+}
+/* profile_picture style */
+.profile_picture{
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.534);
+    
+}
+
+.container p{
+padding: 15px;
+margin-bottom: 30px;
+margin-left: 30px;
+margin-right: 30px;
+border: 2px solid rgba(255, 255, 255, 0.604);
+border-radius: 20px;
+background-color: #ebe5c2ce;
+
+}
+.informations{
+   width: 100%; 
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 25px;
+   
+}
+.informations div{
+ width: 400px;
+ background-color: #b9b28ac7;
+ border-radius: 20px;
+ text-align: center;
+}
+.informations div p{
+padding: 15px;
+margin: 10px;
+min-height: 120px;
+border: 2px solid rgba(255, 255, 255, 0.604);
+border-radius: 20px;
+background-color: #ebe5c2ce;
+}
+
+.Certificates{
+    opacity: 0;
+    animation: Cer 2s ease 1s forwards ;
+}
+@keyframes Cer{
+    0%{
+        translate: 0px 70px;
+    }
+    100%{
+        opacity: 1;
+       
+    }
+}
+.specialty{
+    opacity: 0;
+    animation: spe 2s ease 0.5s forwards ;
+}
+@keyframes spe{
+    0%{
+        translate: 0px 70px;
+    }
+    100%{
+        opacity: 1;
+       
+    }
+}
+.Experiences{
+    opacity: 0;
+    animation: Exp 2s ease 1s forwards ;
+}
+@keyframes Exp{
+    0%{
+        translate: 0px 70px;
+    }
+    100%{
+        opacity: 1;
+       
+    }
+}
+.footer{
+    height: 70px;
+    background-color: #5d5739;
+    margin-top: 100px;
+    border-radius: 20px 20px 0px 0px ;
+}
+.footer a{
+ font-size: 23px;
+ margin: 20px;
+ margin-top: 40px;
+color: white;
+}
+.bxl-youtube{
+color: red;
+}
+.bxl-tiktok{
+    color: white;
+}
+@media (max-width:630px){
+    nav ul{
+        display: block;
+        width: 20%;
+        height: 45px;
+        }
+}
