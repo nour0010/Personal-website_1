@@ -40,7 +40,6 @@ nav{
 nav .logo{
     font-size: 35px;  
 }
-/* home ,about,My works navebar */
 nav ul{
 display: flex;
 justify-content: space-around;
@@ -91,7 +90,14 @@ nav ul li:hover{
     width: 100%;
     
 }
-.Me{
+.WhoAmI i{
+    margin: 8px;
+    font-size: 20px;
+}
+.WhoAmI h1 span{
+    color: orange;
+}
+.WhoAmI p{
     max-width: 600px;
     padding: 20px;
     margin: auto;
@@ -105,8 +111,9 @@ nav ul li:hover{
    gap: 25px;
    
 }
-.my_projects{
-    margin: 100px 0px 10px 0px;
+.address{
+    margin: 100px 0px 15px 0px ;
+    
 }
 .informations div,.projects a{
  width: 400px;
@@ -176,29 +183,10 @@ color: black;
     border-radius: 20px;
 }
 
-
-.footer{
-    height: 70px;
-    background-color: #5d5739;
-    margin-top: 100px;
-    border-radius: 20px 20px 0px 0px ;
-}
-.footer a{
- font-size: 23px;
- margin: 20px;
- margin-top: 40px;
-color: white;
-}
-.bxl-youtube{
-color: red;
-}
-.bxl-tiktok{
-    color: white;
-}
 @media (max-width:630px){
     nav ul{
-        display: block;
-        width: 20%;
-        height: 45px;
+        
+        width: 100%;
+      
         }
 }
